@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Nusrat's Projects </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+
+<body id="main" class="is-preload">
+
+
+    <header id="header">
+        <div class="inner">
+            <!-- This is where the header text comes from, it's inserted with CSS. see main.css line~2668 -->
+            <a href="portfolio.html#" class="image avatar"><img src="Nusrat1.png"></a>
+            <br><span class="headertext_hi"> </span>
+            <br><span class="headertext_hometown"> </span>
+            <br><span class="headertext_pitch"> </span>
+            <br><span class="headertext_closing"> </span>
+            <!-- header text above -->
+        </div>
+    </header>
+
+    <div>
+        <h1>High-Precision Multi-End-Effector Manipulator for Autonomous Tasks</h1>
+        <p style="margin-top:1cm;"></p>
+        <p>Hypersonic’s 6-DOF manipulator operates within a 1.4 m truncated spherical workspace and uses a 120° rotating base for extended reach. The arm supports three end-effectors: a precision gripper, an excavator claw for SM tasks, and an autonomous clip-on typing arm for ES missions. The typing system uses machine-vision calibration to detect reference markers on the keyboard and employs inverse kinematics to execute key presses with millimeter-level accuracy. This adaptability allows a single arm to handle soil excavation, typing, switch manipulation, and secure gripping in diverse mission scenarios.</p>
+        <img src="claw2.png" style="display: block; margin-right: auto; margin-left: auto; height: 60%; width: 50%">
+
+        <p class="subtitle"> Motivation & Constraints:</p>
+        <p style="margin-top:1cm;"></p>
+        <p>The goal was to design a multifunctional arm capable of executing tasks that previously required separate manipulators. This matters because rover missions must remain lightweight while performing highly dexterous operations. The project was constrained by strict mass limits, a requirement for sub-centimeter accuracy, and limited computation time for onboard IK solving.</p>
+
+        <p class="subtitle"> Results & Evaluation</p>
+        <p style="margin-top:1cm;"></p>
+
+
+        <p>Typing accuracy exceeded 95% across repeated trials, and the adaptive gripper improved object retention by ~18%. Tool-change time decreased from 8 minutes to 3 minutes with the clip-on system. However, the excavator claw occasionally produced excessive torque under high soil resistance, indicating room for improved joint damping. </p>
+
+
+
+
+
+        <div class="gallery" style = "margin-left: 8.75%; margin-right:8.75%; float: left; width:30%">
+    <a href="CADClaw.png" class="image fit thumb"><img src="CADClaw.png"></a>
+  <div class="desc">CAD model of claw </div>
+</div>
+<div class="gallery" style = "margin-left: 8.75%; margin-right:8.75%; float: left; width:35%">
+    <a href="claw2.png" class="image fit thumb"><img src="claw2.png"></a>
+  <div class="desc">Final version of claw</div>
+</div>
+
+
+
+<p class="subtitle">My contributions:</p>
+        <p style="margin-top:1cm;"></p>
+
+        <p>
+        <ul>
+            <li>Developed visual-marker calibration for IK, raising autonomous typing accuracy to >95%.</li>
+            <li>Designed a 3D-printed adaptive gripper with ~18% improved grip retention.</li>
+            <li>Integrated the clip-on mechanism, reducing end-effector swap time by ~63%.
+</li>
+        </ul>
+        </p>
+
+        <p class="subtitle"> Learnings:</p>
+        <p style="margin-top:1cm;"></p>
+
+        <p>
+        <ul>
+            <li>Soil excavation loads were underestimated → learned to model soil-tool interaction more precisely.</li>
+            <li>Machine vision struggled in low light → realized need for built-in illumination.</li>
+
+            <li>Early IK models produced joint singularities → learned to redefine workspace boundaries to avoid unstable configurations.</li>
+            <li>Clip-on system initially loosened under vibration → developed stronger locking detents.</li>
+        </ul>
+        </p>
+
+
+        <p class="subtitle"> Reflection (What didn’t work & next iteration):</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+            The first prototype of the typing system misaligned after repeated impacts on mechanical keys. I learned to incorporate compliance into the stylus tip and implement soft-landing IK trajectories. These refinements significantly increased accuracy and reduced wear on both the arm and keyboard.
+        </p>

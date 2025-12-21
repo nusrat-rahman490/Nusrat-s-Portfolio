@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Nusrat's Projects </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+
+<body id="main" class="is-preload">
+
+
+    <header id="header">
+        <div class="inner">
+            <!-- This is where the header text comes from, it's inserted with CSS. see main.css line~2668 -->
+            <a href="portfolio.html" class="image avatar"><img src="Nusrat1.png"></a>
+            <br><span class="headertext_hi"> </span>
+            <br><span class="headertext_hometown"> </span>
+            <br><span class="headertext_pitch"> </span>
+            <br><span class="headertext_closing"> </span>
+            <!-- header text above -->
+        </div>
+    </header>
+
+    <div>
+        <h1>Rapid-Access Modular Chassis for Efficient Field Maintenance</h1>
+        <p style="margin-top:1cm;"></p>
+        <p>The Hypersonic chassis employs a segmented modular framework integrated with a flipping mechanism that enables complete separation of control electronics from high-power systems. This architecture dramatically improves accessibility during mission debugging, battery replacement, and emergency maintenance. The modular design reduces assembly complexity, enhances internal airflow, and simplifies cable routing. The flipping interface allows operators to access critical boards without disassembling the entire rover structure, reducing operational downtime and enabling faster troubleshooting in field conditions. </p>
+        <img src="chassis1.png" style="display: block; margin-right: auto; margin-left: auto; height: 60%; width: 50%">
+
+        <p class="subtitle"> Motivation & Constraints:</p>
+        <p style="margin-top:1cm;"></p>
+        <p>The previous rover required long and error-prone disassembly processes to access core electronics, often delaying field tests. The new objective was to cut access time by at least 40% while keeping the overall chassis weight under strict limits. The challenge was to maintain structural integrity with fewer fasteners and more modular joints, all within a tight machining budget and a five-month build schedule. </p>
+
+        <p class="subtitle"> Results & Evaluation</p>
+        <p style="margin-top:1cm;"></p>
+
+
+        <p>The flipping mechanism reduced electronics access time from 25 minutes to under 12 minutes, exceeding the goal by a wide margin. The modular assembly improved heat dissipation by roughly 15% and lowered overall maintenance cycle time. The chassis maintained structural rigidity during stress testing; however, panel alignment during rapid closing still required fine adjustments, suggesting the need for future hinge calibration improvements. </p>
+
+
+
+
+
+
+
+
+        <div class="gallery" style="margin: 5%; float: left; width:25%">
+            <a href="CADChassis.png" class="image fit thumb"><img src="CADChassis.png"></a>
+            <!-- <img src="img_vid/gripper_on.jpg"> -->
+            <div class="desc">CAD model of the chassis </div>
+        </div>
+        <div class="gallery" style="margin: 5%; float: left; width: 20%">
+            <a href="chassis2.png" class="image fit thumb"><img src="chassis2.png"></a>
+            <!-- <img src="img_vid/gripper_parts.jpg" > -->
+            <div class="desc">Improvised version of the chassis</div>
+        </div>
+
+        <div class="gallery" style="margin: 5%; float: left; width: 25%">
+            <a href="chassis3.png" class="image fit thumb"><img src="chassis3.png"></a>
+            <!-- <img src="img_vid/end_effector_parts.jpg" > -->
+            <div class="desc">Final version of chassis</div>
+        </div>
+
+
+
+       <p class="subtitle">My Contributions:</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+        <ul>
+            <li>Designed the flipping mechanism interface, cutting electronics access time by >50%.</li>
+            <li>Engineered chassis segmentation that reduced assembly and repair time by ~35%.</li>
+            <li>Enhanced internal airflow using CAD-based ventilation optimization, boosting cooling efficiency by ~15%.
+</li>
+        </ul>
+        </p>
+
+        <p class="subtitle">Learnings:</p>
+        <p style="margin-top:1cm;"></p>
+
+        <p>
+        <ul>
+            <li>Rapid-opening panels can shift hinge alignment → learned to include adjustable hinge mounts.</li>
+            <li>Cable routing complexity increased after segmentation → emphasized importance of early cable management design.</li>
+
+            <li>Modular joints required reinforcement → learned to incorporate gussets even when weight budgets are tight.</li>
+            <li>Accessibility improvements changed thermal flow → learned to simulate airflow earlier in the development cycle.</li>
+        </ul>
+        </p>
+
+
+        <p class="subtitle"> Reflection (What didn’t work & next iteration):</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+            Initially, the flipping mechanism caused slight misalignment in the electronics tray when repeatedly opened during stress tests. This taught me to design joint tolerances more conservatively and incorporate self-aligning guide rails. Future iterations will include integrated alignment pins to eliminate closing drift.
+        </p>

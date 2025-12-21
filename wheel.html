@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Nusrat's Projects </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+
+<body id="main" class="is-preload">
+
+
+    <header id="header">
+        <div class="inner">
+            <!-- This is where the header text comes from, it's inserted with CSS. see main.css line~2668 -->
+            <a href="portfolio.html#" class="image avatar"><img src="Nusrat1.png"></a>
+            <br><span class="headertext_hi"> </span>
+            <br><span class="headertext_hometown"> </span>
+            <br><span class="headertext_pitch"> </span>
+            <br><span class="headertext_closing"> </span>
+            <!-- header text above -->
+        </div>
+    </header>
+
+    <div>
+        <h1>Terrain-Optimized Suspension and Wheel Architecture for Harsh Environments</h1>
+        <p style="margin-top:1cm;"></p>
+        <p>Hypersonic’s mobility architecture is built around an enhanced rocker-bogie suspension integrated with a CNC-machined arched base support designed to distribute loads efficiently across all six wheels. This geometry improves traction, shock absorption, and terrain adaptability on slopes exceeding 25° and on highly fractured surfaces. The arched base reduces stress concentrations at the wheel joints and increases wheel-ground contact consistency, which is crucial for tasks involving steep climbs and heavy payload retrieval. The chassis panels incorporate a weight-reducing Jamdani-inspired pattern, fabricated through CNC machining, which achieves nearly a 10% mass reduction without compromising torsional rigidity. This system ensures stability, power efficiency, and mission reliability in unpredictable field conditions. </p>
+        <img src="wheel1.png" style="display: block; margin-right: auto; margin-left: auto; height: 60%; width: 50%">
+
+        <p class="subtitle"> Motivation & Constraints:</p>
+        <p style="margin-top:1cm;"></p>
+        <p>The primary objective was to improve slope stability and traction reliability compared to last year’s rover,
+            which struggled on uneven rocks and loose soil. This redesign matters because the rover must safely carry
+            science payloads, retrieve cache boxes, and navigate long distances without losing balance or causing wheel
+            motor overload. </p>
+
+        <p class="subtitle"> Results & Evaluation</p>
+        <p style="margin-top:1cm;"></p>
+
+
+        <p>The redesigned wheel system exceeded the initial objective by increasing stability by approximately 22%
+            during slope trials and reducing chassis vibration by an estimated 18%. The weight reduction improved
+            battery runtime by roughly 9%. Field tests showed a significant improvement in wheel-ground adherence across
+            rocky surfaces, though minor slipping still occurred on loose sand, indicating a future need for tread
+            pattern optimization. </p>
+
+
+
+
+
+
+
+
+        <div class="gallery" style="margin: 5%; float: left; width:25%">
+            <a href="CAD Wheel.png" class="image fit thumb"><img src="CAD Wheel.png"></a>
+            <!-- <img src="img_vid/gripper_on.jpg"> -->
+            <div class="desc">CAD version of the wheel </div>
+        </div>
+        <div class="gallery" style="margin: 5%; float: left; width: 20%">
+            <a href="wheel1.png" class="image fit thumb"><img src="wheel1.png"></a>
+            <!-- <img src="img_vid/gripper_parts.jpg" > -->
+            <div class="desc">Improvised version of the wheel</div>
+        </div>
+
+        <div class="gallery" style="margin: 5%; float: left; width: 25%">
+            <a href="MongolTori Wheel.png" class="image fit thumb"><img src="MongolTori Wheel.png"></a>
+            <!-- <img src="img_vid/end_effector_parts.jpg" > -->
+            <div class="desc">Final version of wheel</div>
+        </div>
+
+
+
+        <p class="subtitle">My Contributions:</p>
+        <p style="margin-top:1cm;"></p>
+
+        <p>
+        <ul>
+            <li>Optimized the load-bearing geometry of the arched base, increasing slope stability by ~22% over the
+                previous model.</li>
+            <li>Machined CNC-patterned wheel panels inspired by Jamdani design, reducing system weight by ~10%.</li>
+            <li>Analyzed ground clearance and rocker-bogie articulation across 15+ simulated terrains to ensure obstacle
+                negotiation.</li>
+        </ul>
+        </p>
+
+        <p class="subtitle"> Learnings:</p>
+        <p style="margin-top:1cm;"></p>
+
+        <p>
+        <ul>
+            <li>Wheel slip was still noticeable on loose sandy terrain → need to redesign tread geometry for better soil
+                engagement.</li>
+            <li>Rocker-bogie articulation needed additional damping at extreme joint angles → learned importance of
+                integrating compliance elements.</li>
+
+            <li>CNC machining of thin patterned panels introduced distortion → refined tolerance strategies to prevent
+                warping.</li>
+            <li>Terrain simulations did not perfectly match real-world soil conditions → learned to incorporate physical
+                soil testing sooner in the process.</li>
+        </ul>
+        </p>
+
+
+        <p class="subtitle"> Reflection (What didn’t work & next iteration):</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+            Initially, I underestimated how much the patterned CNC cuts would reduce stiffness in localized regions.
+            Early prototypes showed minor flexing under high torque loads. I learned to balance aesthetic weight
+            reduction with finite element analysis constraints and implemented reinforcement ribs in later iterations.
+            This improved overall durability without significant weight gain.
+        </p>

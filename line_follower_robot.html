@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Nusrat's Projects </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+
+<body id="main" class="is-preload">
+
+
+    <header id="header">
+        <div class="inner">
+            <!-- This is where the header text comes from, it's inserted with CSS. see main.css line~2668 -->
+            <a href="portfolio.html#" class="image avatar"><img src="Nusrat1.png"></a>
+            <br><span class="headertext_hi"> </span>
+            <br><span class="headertext_hometown"> </span>
+            <br><span class="headertext_pitch"> </span>
+            <br><span class="headertext_closing"> </span>
+            <!-- header text above -->
+        </div>
+    </header>
+
+    <div>
+        <h1>Obstacle Avoiding Robot Competition</h1>
+        <p style="margin-top:1cm;"></p>
+        <p> This robot was fully designed and built from scratch with a strong focus on mechanical design, sensing, and real-time autonomous decision-making. Most structural components, including the chassis and wheels, were custom 3D-printed, enabling rapid prototyping, lightweight construction, and easy iteration. Bearings, fasteners, and spacers were carefully selected to ensure smooth motion, structural rigidity, and reliable assembly.</p>
+        <img src="Obstacle Robot.png" style="display: block; margin-right: auto; margin-left: auto; height: 60%; width: 50%">
+
+        <p class="subtitle"> Mechanical Design: </p>
+        <p style="margin-top:1cm;"></p>
+        <p>We've made our robot totally from scratch. Most of the parts of our robot are 3D printed, starting from chassis, wheels, and so on. </p>
+
+        <p class="subtitle"> Mechanical Design Part list </p>
+        <p style="margin-top:1cm;"></p>
+
+  <p>
+        <ul>
+            <li>Axial Bearing (8mm x 16mm x 5mm)</li>
+            <li>Axial Flange Bearing (3mm x 8mm x 4mm)</li>
+            <li>M3 bolt</li>
+            <li>M3 nut</li>
+            <li>M2 bolt</li>
+            <li>M2 nut</li>
+            <li>M3 hex spacer</li>
+            <li>3D printed parts</li>
+            <li>Zip ties</li>
+        </ul>
+        </p>
+
+         <a href="video.html">Assembling of mechanical parts can be found here.</a>
+  
+
+
+         <p class="subtitle"> Robot's chassis:</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+            The chassis of our robot, primarily composed of 3D-printed parts, serves as the robust foundation for all hardware and electronic components. Custom-designed to accommodate our specific needs, each piece has been modeled to interlock seamlessly, providing a lightweight yet durable structure. The modular nature of the 3D-printed chassis allows for easy customization and scalability. It has been engineered to house the motors, electronics, and battery, ensuring proper heat dissipation and weight distribution for optimal performance. This approach not only allows for rapid prototyping and iterative design but also ensures that parts can be replaced or upgraded with minimal effort as the robot evolves.
+        </p>
+
+
+         <p class="subtitle"> Electrical design of our robot:</p>
+        <p style="margin-top:1cm;"></p>
+         <p>
+            In order to achieve the highest possible efficiency and reliability, we have spent several hundred hours researching and developing the parts. The following paragraphs provide detailed information about electrical systems design.
+        </p>
+
+    <p class="subtitle"> Electrical Design Part list </p>
+        <p style="margin-top:1cm;"></p>
+
+  <p>
+        <ul>
+            <li>Jetson Nano Developer Kit (4GB)</li>
+            <li>Esp32 Development Board</li>
+            <li>USB to TTL Serial Converter</li>
+            <li>Micropack MWB-15 Pro FHD 2MP Stream Webcam</li>
+            <li>500 rpm 25GA 12V DC Gear Motor</li>
+            <li>DS3235 Servo</li>
+            <li>M3 hex spacer</li>
+            <li>5xHC-SR04 Ultrasonic Sensorss</li>
+            <li>TB6612FNG Motor Driver</li>
+             <li>MPU6050</li>
+              <li>3.0 USB Type-C PD Power module</li>
+               <li>XL6009 Buck Boost Module</li>
+                <li>3S LiPo battery input through XT60 Connector</li>
+                 <li>Mini Rocker Switch</li>
+                  <li>Push Button</li>
+                   <li>LED (3mm)</li>
+                    <li>Electrolytic Capacitor (1000μF)</li>
+                    <li>MINI MP1584EN DC-DC BUCK</li>
+                    <li>MINI DC-DC STEP DOWN POWER SUPPLY</li>
+        </ul>
+        </p>
+
+<p>
+  <a href="circuit.html">Circuit diagrams and schematics can be found here.</a>
+  
+</p>
+
+
+ <p class="subtitle"> Mobility Management</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+        <ul>
+            <li>The front axle is being articulated by the Servo Motor.</li>
+            <li>To control our Motor we have used a TB6612FNG motor driver.</li>
+            <li>The robot uses <a href="steering.html">Ackermann steering geometry </a>  to improve maneuverability and cornering performance while minimizing tire scrubbing. This steering principle ensures that the inner and outer front wheels follow different turning radii during a turn, allowing the inner wheel to rotate at a sharper angle than the outer wheel. By maintaining proper wheel alignment throughout turns, Ackermann steering enhances stability, reduces tire wear, and enables smoother, more efficient motion—making it well suited for autonomous wheeled robots operating in constrained environments.
+
+            </li>
+            
+            <li>We also used a differential gearbox for the rear wheels. Although it uses a single DC motor, its primary purpose is to enable the wheels on a single axle to rotate at different speeds while receiving power from the engine and transmission. This crucial function allows for smooth and stable operation, particularly when the vehicle is turning. The differential works by distributing power from the input (usually the driveshaft) to the wheels. It ensures that both wheels receive power depending on the direction it's turning.</li>
+           
+        </ul>
+        </p>
+
+
+  
+
+<div class="gallery" style = "margin: 8.75%; float: left; width:30%">
+    <a href="steering.png" class="image fit thumb"><img src="steering.png"></a>
+  <div class="desc">Ackermann Steering </div>
+</div>
+
+
+<div class="gallery" style = "margin: 8.75%; float: left; width:35%">
+    <a href="gearbox.png" class="image fit thumb"><img src="gearbox.png"></a>
+  <div class="desc">Differential gearbox</div>
+</div>
+
+
+
+      <p class="subtitle">Power and Sense Management:</p>
+
+         <p style="margin-top:1cm;"></p>
+
+      
+        <p>
+        <ul>
+            <li>The main camera is placed at the top of the robot facing slightly downwards. This downward-facing angle enhances the camera's ability to detect objects effectively, starting from close proximity and extending to objects situated further away.</li>
+            <li>We've designed a sonar mount which is mounted at the front and the side of the robot where the front-left and front-right sonar sensors are mounted at an angle of 52.5 degrees. Based on our testing, this is the optimal angle for the sonars to detect walls ahead of time, giving the bot enough time to react.</li>
+            <li>We're using a Jetson Nano to handle the image processing algorithms. The Jetson Nano uses a camera to detect towers and corner lines and sends the data to ESP32 via serial communication.</li>
+
+                 <li>A Buck-Boost modules were used for getting a constant output of 12V for the Motor</li>
+
+
+                 <li>Two buck module is used. One is for getting a constant 6V for the Servo, and the other one is for getting a constant 5V for the ESP32.</li>
+
+                 <li>    A DC Quick Charge Adapter is used to power the Jetson.
+
+</li>
+        </ul>
+        </p>
+ <img src="PowerManagement.png" style="display: block; margin-right: auto; margin-left: auto; height: 60%; width: 50%">
+
+
+
+<p class="subtitle">Custom hand made circuit board:</p>
+        <p style="margin-top:1cm;"></p>
+
+
+<div class="gallery" style = "margin-left: 8.75%; margin-right:8.75%; float: left; width:30%">
+    <a href="Top.png" class="image fit thumb"><img src="Top.png"></a>
+  
+  <div class="desc">Top part of circuit </div>
+
+</div>
+<div class="gallery" style = "margin-left: 8.75%; margin-right:8.75%; float: left; width:35%">
+    <a href="Bottom.png" class="image fit thumb"><img src="Bottom.png"></a>
+    
+  <div class="desc">Lower part of circuit(soldering)</div>
+  
+</div>
+
+
+
+
+        <p class="subtitle"> Debugging:</p>
+        <p style="margin-top:1cm;"></p>
+
+
+
+        <p>
+        <ul>
+            <li>We're using a 7-inch Pi display to debug problems regarding the Jetson Nano and Python programs.
+</li>
+            <li>A buzzer is turned on for 200 milliseconds each time the robot detects a turn.</li>
+
+            <li>The input button's GPIO pin is also being used to control an LED that shown the current state of the robot (ie: following object, lost object etc.)</li>
+            
+        </ul>
+        </p>
+<video style = "margin-bottom: 30px; width: 35%" controls muted loop > <source src="debugging.mp4"> </video>
+ <h1>Program infrastructure and explanation of algorithm</h1>
+
+        <p class="subtitle"> Avoiding walls( Qualifying Round):</p>
+        <p style="margin-top:1cm;"></p>
+        <p>
+            The program initiates with an initial throttle value of 1 (Full forward) and a steer value of 0 (No steering). Then it evaluates each sensor, checking whether its measured distance falls below its designated maximum distance threshold. If this condition is met, the sensor's value is remapped within a range specified by a minimum and maximum value, both of which are confined to the 0-1 range. This remapping process is inversely related to distance; the closer an object is, the higher the remapped value becomes.
+        </p>
+
+        <p>
+            For sensors positioned to the sides, this recalibrated value is then either added or subtracted from the existing steer value, effectively influencing the robot's lateral movement.
+        </p>
+
+        <p>
+           In the case of the front sensor, its remapped value is employed to diminish the throttle value, effectively slowing the robot down as objects come closer. Additionally, it amplifies the current steer value, causing the robot to respond more rapidly and make sharper turns when objects are detected in close proximity.
+        </p>
+
+        <p>
+           This comprehensive sensor-driven control scheme ensures that the robot can effectively navigate and respond to its environment, making it capable of avoiding obstacles and adjusting its course as needed.</p>
+
+
+           <p class="subtitle"> Lap Count:</p>
+        <p style="margin-top:1cm;"></p>
+
+        <p>
+            The Jetson Nano constantly looks for the corner lines using the camera. If the first line is blue, then the robot is going counter-clockwise, and if the first line is orange, then the robot is going clockwise. After determining the direction, then the program looks for the second line. Whenever it sees a line matching the color of the second line, it sends the data to the ESP32 and increases the turn count by one. To achieve the goal of completing three laps, the robot must complete 12 turns in total. Therefore, when the turn count reaches the value of 12, the program triggers the robot to operate under normal conditions for a predetermined duration. After that, the robot comes to a halt, having completed three laps.
+        </p>
+
+        <p>
+           The robot harnesses the processing power of both cores of the ESP32 microcontroller by using FreeRTOS, a real-time operating system. The primary core handles all logical operations and calculations, ensuring the swift execution of tasks. Simultaneously, a separate core is dedicated to acquiring sensor data, allowing for rapid data retrieval. This dual-core configuration enables the robot to perform calculations and make decisions with remarkable speed and efficiency.
+        </p>
+
+
+         <p class="subtitle"> Obstacle Round:</p>
+        <p style="margin-top:1cm;"></p>
+         <p>
+         At present, the robot uses OpenCV for detecting red and green towers. The Jetson Nano detects the colors of these towers, and by utilizing the on-screen width value of the detected towers in pixels, the robot can estimate the distance to any visible tower. This estimation is based on an inverse proportional relationship, expressed by the equation:
+        </p>
+
+         <div class="gallery" style = "margin-left: 8.75%; margin-right:8.75%; float: left; width:30%">
+    <a href="graph11.png" class="image fit thumb"><img src="graph11.png"></a>
+  </div>
+
+
+<div class="gallery" style = "margin-left: 8.75%; margin-right:8.75%; float: left; width:35%">
+    <a href="plottedValue.png" class="image fit thumb"><img src="plottedValue.png"></a>
+    </div>
+
+ <p class="subtitle"> Avoiding towers:</p>
+        <p style="margin-top:1cm;"></p>
+         <p>
+      After obtaining the initial steer and throttle values from the sonar sensors, the program proceeds to adjust these values based on the presence of red and green towers in the environment.
+        </p>
+ <p>
+      The program systematically evaluates all visible towers and selects the one closest to the robot. Then it follows the robot up to a certain distance and then starts to avoid the tower based on the color. For this, it examines two key factors: the distance to the target tower and its horizontal position on the screen.
+        </p>
+
+
+        <p>
+        <ul>
+    
+             <li> <strong>Distance Factor:</strong> A numeric value between 0 and 1 is generated, and this value is directly proportional to the tower's proximity to the robot. The closer the tower, the larger this value becomes.
+</li>
+            <li><strong>Horizontal Position Factor: </strong>Another value ranging from 0 to 1 is determined based on the tower's horizontal position on the screen. For red towers, the program aims to make right turns, so a higher value is assigned when the tower is on the right side of the screen (influencing steering significantly), and the value decreases as the tower moves towards the left side. Conversely, for green towers, the same principle applies but with reversed sides.</li>
+
+           
+            
+        </ul>
+        </p>
+<p>
+      These two calculated values are then multiplied together, yielding a new value also ranging from 0 to 1. This new value is added to or subtracted from the existing steer value. This dynamic adjustment based on tower presence and location allows the robot to navigate and react to the positions of red and green towers, facilitating precise and adaptable movement.
+        </p>
+
+        <p>
+    Right after the robot passes a tower, it steers a little bit towards the opposite of the way it was steering in order to pass that tower. For example, if the robot passes a red tower, which means it has been steering towards the right side, the robot will steer towards the left for a brief moment. This ensures that the robot will notice the next object without issues.
+        </p>
+
+
+         <p>
+   As the robot keeps track of the blue or yellow lines placed at the corners of the track, it understands when to take a turn. Therefore, the robot takes a small turn whenever it notices a new line using its camera. It stops turning immediately when it sees a tower.
+        </p>
+
+        <p class="subtitle"> Avoiding collisions:</p>
+        <p style="margin-top:1cm;"></p>
+         <p>
+      To address the possibility of collisions with walls or towers after modifying the steer and throttle values using the tower detection algorithm, the program implements continuous monitoring of distance values. If any of these values fall below a specified threshold, the program overrides the modifications made by the tower-avoidance algorithm and reverts to actions based on the distance values alone.
+        </p>
+
+         <p>
+    Additionally, if any object, such as a wall or tower, approaches closer to the robot than a predefined distance threshold, the program initiates a brief backward movement. During this backward motion, the program also adjusts the steer value based on the color of the target tower. For instance, if the robot detects a red tower, it may steer left while moving backward, and for a green tower, it may steer right. This dynamic response mechanism ensures that the robot takes evasive action to avoid collisions while considering the type and location of the detected objects.  To address the possibility of collisions with walls or towers after modifying the steer and throttle values using the tower detection algorithm, the program implements continuous monitoring of distance values. If any of these values fall below a specified threshold, the program overrides the modifications made by the tower-avoidance algorithm and reverts to actions based on the distance values alone.
+        </p>
+
+
+
+<div class="gallery" style="width:35%; margin: 5% auto; float: none; text-align: center;">
+  <a href="BlackPic.png" class="image fit thumb">
+    <img src="BlackPic.png" alt="">
+  </a>
+</div>
+
+
+
+ <p class="subtitle"> U-turn:</p>
+        <p style="margin-top:1cm;"></p>
+         <p>
+      The program keeps the history of towers it has encountered in its way. It stores them in a stack-like order. So, after the 8th turn, The robot starts looking for colored towers. There are a few possible scenarios:
+        </p>
+
+         <p>
+    Additionally, if any object, such as a wall or tower, approaches closer to the robot than a predefined distance threshold, the program initiates a brief backward movement. During this backward motion, the program also adjusts the steer value based on the color of the target tower. For instance, if the robot detects a red tower, it may steer left while moving backward, and for a green tower, it may steer right. This dynamic response mechanism ensures that the robot takes evasive action to avoid collisions while considering the type and location of the detected objects.  To address the possibility of collisions with walls or towers after modifying the steer and throttle values using the tower detection algorithm, the program implements continuous monitoring of distance values. If any of these values fall below a specified threshold, the program overrides the modifications made by the tower-avoidance algorithm and reverts to actions based on the distance values alone.
+        </p>
+
+        <p>
+        <ul>
+    
+             <li> The robot detects a tower at the beginning or the middle of the section. Then that tower is the last tower. </li>
+
+
+
+<p>
+        <ul>
+    
+             <li> If it's red, do a U-turn.</li>
+             <li>If it's green, disable u-turn.</li>
+</ul>
+        </p>
+
+        <li>The robot detects a tower at the end of the section. Then the last object saved in the history stack is the final tower. </li>
+
+
+<p>
+        <ul>
+    
+             <li>If it's red, wait until the robot gets to the middle of the section, and do a U-turn</li>
+             <li>If it's green, disable U-turn</li>
+</ul>
+        </p>
+
+           
+           <p>
+    After the robot makes a U-turn, it sends a flag to the Jetson to reset the turn count and flip the track direction.
+        </p>
+  
+          <p>
+    Once again, the ESP32's primary core handles the calculations and decision-making processes, while the secondary core is responsible for collecting data from the distance sensors and the Jetson Nano. This configuration enables the robot to react quickly and avoid collisions with walls or obstacles.
+        </p>
+       
+
+   
+
+
+       
