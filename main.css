@@ -2679,7 +2679,7 @@ input, select, textarea {
 			position: relative;
 			margin: 0 0 1.5em 0;
 			font-size: 95%;	
-		 	content: "I am passionate about robotics, autonomous systems, and  hardware development.I enjoy designing, prototyping, and assembling mechanical and electromechanical systems using CAD and rapid prototyping tools.";
+		 	content: "I am passionate about software development, robotics, autonomous systems, and  hardware development.I enjoy designing, prototyping, and assembling mechanical and electromechanical systems using CAD and rapid prototyping tools.";
 		}
 
 		.headertext_pitch::after {
@@ -2687,7 +2687,7 @@ input, select, textarea {
 			position: relative;
 			margin: 0 0 1.5em 0;
 			font-size: 96%;
-		 	content: "My experience includes working on rover platforms, manipulators, and obstacle-avoiding robots with a focus on system integration and testing.";
+		 	content: "My experience includes working on  apps, rover platforms, manipulators, and obstacle-avoiding robots with a focus on system integration and testing.";
 		}
 
 		
